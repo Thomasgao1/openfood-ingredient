@@ -8,3 +8,5 @@ A bash script that searches the OpenFoodFacts `products.csv` (TSV) for an ingred
 ./find_ingredient.sh -i "<ingredient>" -d /path/to/folder
 # /path/to/folder must contain products.csv (TSV)
 
+Submission URL:
+https://github.com/Thomasgao1/openfood-ingredient
