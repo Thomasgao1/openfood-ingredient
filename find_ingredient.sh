@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -euo pipefail
 export CSVKIT_FIELD_SIZE_LIMIT=$((1024 * 1024 * 1024))
 
