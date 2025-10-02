@@ -28,14 +28,6 @@ for cmd in csvcut csvgrep csvformat; do
   command -v "$cmd" >/dev/null 2>&1 || { echo "ERROR: $cmd not found. Install csvkit." >&2; exit 1; }
 done
 
-# normalize CRLF
-tmp_csv="$(mktemp)"; tr -d '\r' < "$CSV" > "$tmp_csv"
-
-# detect ingredient column
-COL="ingredients_text"
-if csvcut -t -n "$tmp_csv" | grep -q 'ingredients_text_en'; then
-  COL="ingredients_text_en"
-fi
 
 # pipeline (zero-match safe)
 tmp_matches="$(mktemp)"
