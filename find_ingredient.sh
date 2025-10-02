@@ -1,7 +1,7 @@
 set -euo pipefail
 export CSVKIT_FIELD_SIZE_LIMIT=$((1024 * 1024 * 1024))
 
-INGREDIENT=""; DATA_DIR=""
+INGREDIENT=""; DATA_DIR=""; CSV=""
 usage() {
   echo "Usage: $0 -i \"<ingredient>\" -d /path/to/folder"
   echo "  -i ingredient to search (case-insensitive)"
