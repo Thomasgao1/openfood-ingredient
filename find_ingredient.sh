@@ -50,4 +50,4 @@ count="$(wc -l < "$tmp_matches" | tr -d ' ')"
 echo "----"
 echo "Found ${count} product(s) containing: \"${INGREDIENT}\""
 
-rm -f "$tmp_csv" "$tmp_matches"
+rm -f "$tmp_matches"
